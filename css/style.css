@@ -1,4 +1,8 @@
-
+header {
+  background-color: rgba(247,211,176,0.8);
+  padding: 10px;
+  margin: 10px
+}
 body{
   background-color: #FFBD7E;
   font-family: 'Lato', sans-serif;
@@ -47,12 +51,15 @@ a:active { /* selected link */
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #252323;
-  color: #ffffff; /* needed to override the default link color */
+  color: #252323; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 25px;
   border-bottom: 0px solid #994c30; /* width of the border, type, color */
   transition: 0.2s opacity;
+}
+.button:visited {
+  color: #ffffff
 }
 .button:hover {
   background-color: #F7D3B0;
@@ -71,4 +78,13 @@ a:active { /* selected link */
 .button.contact:hover {
   background-color: #252323;
   color: #ffffff;
+}
+.about-me {
+  color: #252323;
+}
+.my-work {
+  color: #252323;
+}
+.contact-me {
+  color: #252323;
 }
