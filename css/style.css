@@ -7,11 +7,11 @@ header {
 -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 position: relative;
+}
 main {
   padding-top: 133px;
 }
-}
-{
+* {
   box-sizing: border-box;
 }
 
@@ -168,4 +168,5 @@ footer {
 }
 .photo { */I'm trying to fix the size of my photo on my about me page */
   max-width: 250px;
+  display: block;
 }
