@@ -16,6 +16,7 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 1.75em;
   font-weight: 400;
+  text-align: center;
 }
 h2 {
   font-size: 1.25em;
@@ -28,6 +29,15 @@ h3 {
 h4 {
   font-size: 0.35em;
   font-weight: 400;
+}
+h5 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h6 {
+  font-size: 1.15em;
+  font-weight: 500;
+  text-align: center;
 }
 img {
   width: 100%;
@@ -50,7 +60,7 @@ a:active { /* selected link */
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #252323;
-  color: #252323; /* needed to override the default link color */
+  color: #FFFFFF; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 25px;
@@ -89,17 +99,10 @@ a:active { /* selected link */
 }
 
 header {
-  background-color: rgba(247,211,176,0.8);
+  background-color: #FFBD7E;
   text-align: center;
   padding: 10px 0;
-  margin: 10px;
-  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
--moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 position: relative;
-}
-main {
-  padding-top: 133px;
 }
 
 /* Layout Styling */
@@ -109,15 +112,22 @@ main {
 .row{
   margin: 25px 0;
 }
+.column{
+  margin-bottom: 15px;
+}
 #hero h1{
   text-align: center;
 }
 .logo{
   max-width: 250px;
 }
+.logo svg{
+  width: 200px;
+}
 nav > ul > li {
   list-style-type: none;
   padding: 0;
+  text-align: center;
   display: inline-block;
   padding: 0 15px;
   text-transform: uppercase;
@@ -127,6 +137,7 @@ nav > ul > li {
 nav > ul > li > a:visited {
   list-style-type: none;
   padding: 0;
+  text-align: center;
   display: inline-block;
   padding: 0 15px;
   text-transform: uppercase;
@@ -136,8 +147,8 @@ nav > ul > li > a:visited {
 nav > ul > li > a:hover {
   list-style-type: none;
   padding: 0;
+  text-align: center;
   display: inline-block;
-  padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #252323;
@@ -145,17 +156,17 @@ nav > ul > li > a:hover {
 nav > ul > li > a:active {
   list-style-type: none;
   padding: 0;
+  text-align: center;
   display: inline-block;
-  padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #ffffff;
 }
 #hero {
-  background-color: rgba(247,211,176,0.8);
+  background-color: #FFBD7E;
 }
 #hero {
-  background-color: rgba(247,211,176,0.8);
+  background-color:#FFBD7E;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -164,9 +175,20 @@ footer {
   background-color: rgba(247,211,176,0.8);
   text-align: center;
   padding: 10px 0;
-  margin: 10px
 }
-.photo { 
-  max-width: 250px;
+.social{
+  text-align: center;
+}
+.social a {
+  display: inline-block;
+}
+.social svg {
+  width: 50px;
+  height: auto;
+}
+.photo {
+  width: 250px;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
