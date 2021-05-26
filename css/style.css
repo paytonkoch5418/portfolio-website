@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: #FFBD7E;
   font-family: 'Lato', sans-serif;
   font-size: 14px;
@@ -13,91 +13,117 @@ body{
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 1.75em;
   font-weight: 400;
   text-align: center;
 }
+
 h2 {
   font-size: 1.25em;
   font-weight: 400;
 }
+
 h3 {
   font-size: 0.75em;
   font-weight: 400;
 }
+
 h4 {
   font-size: 0.35em;
   font-weight: 400;
 }
+
 h5 {
   font-size: 1.75em;
   font-weight: 400;
   margin-top: 0;
-  margin-bottom: 0;;
+  margin-bottom: 0;
+  ;
 }
+
 h6 {
   font-size: 1.15em;
   font-weight: 500;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 25;
+  margin-bottom: 25px;
 }
+
 img {
   width: 100%;
 }
+
 a {
   color: #252323;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
-a:visited { /* visited link */
+
+a:visited {
+  /* visited link */
   color: #ab6018;
 }
+
 a:hover,
 a:focus {
   color: #252323;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: #414142;
 }
+
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
   background-color: #252323;
-  color: #FFFFFF; /* needed to override the default link color */
+  color: #FFFFFF;
   font-weight: 400;
   padding: 10px;
   border-radius: 25px;
-  border-bottom: 0px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid #994c30;
   transition: 0.2s opacity;
 }
+
 .button:visited {
   color: #ffffff
 }
+
 .button:hover {
   background-color: #F7D3B0;
   color: #252323;
+  opacity: 0.8;
 }
-.button:active{
+
+.button:active {
   background-color: #F7D3B0;
   color: #252323;
 }
+
 .button.contact {
   background-color: transparent;
   color: #252323;
   text-transform: uppercase;
   border: 2px solid #252323;
 }
+
 .button.contact:hover {
   background-color: #252323;
   color: #ffffff;
 }
+
 .about-me {
   color: #252323;
 }
+
 .my-work {
   color: #252323;
 }
+
 .contact-me {
   color: #252323;
 }
@@ -106,34 +132,41 @@ header {
   background-color: #FFBD7E;
   text-align: center;
   padding: 10px 0;
-position: relative;
+  position: relative;
 }
 
 /* Layout Styling */
 .container {
   padding: 0 15px;
 }
-.row{
+
+.row {
   margin: 25px 0;
 }
-.column{
+
+.column {
   margin-bottom: 15px;
 }
-#hero h1{
+
+#hero h1 {
   text-align: center;
 }
-.logo{
+
+.logo {
   max-width: 250px;
 }
-.logo svg{
+
+.logo svg {
   width: 200px;
 }
-nav > ul {
+
+nav>ul {
   margin-left: 0;
   padding-left: 0;
   margin-top: 0;
 }
-nav > ul > li {
+
+nav>ul>li {
   list-style-type: none;
   padding: 0;
   text-align: center;
@@ -143,7 +176,8 @@ nav > ul > li {
   font-weight: 700;
   color: #252323;
 }
-nav > ul > li > a:visited {
+
+nav>ul>li>a:visited {
   list-style-type: none;
   padding: 0;
   text-align: center;
@@ -153,7 +187,8 @@ nav > ul > li > a:visited {
   font-weight: 700;
   color: #252323;
 }
-nav > ul > li > a:hover {
+
+nav>ul>li>a:hover {
   list-style-type: none;
   padding: 0;
   text-align: center;
@@ -162,7 +197,8 @@ nav > ul > li > a:hover {
   font-weight: 700;
   color: #252323;
 }
-nav > ul > li > a:active {
+
+nav>ul>li>a:active {
   list-style-type: none;
   padding: 0;
   text-align: center;
@@ -171,34 +207,132 @@ nav > ul > li > a:active {
   font-weight: 700;
   color: #ffffff;
 }
+
 #hero {
   background-color: #FFBD7E;
 }
+
 #hero {
-  background-color:#FFBD7E;
+  background-color: #FFBD7E;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
+
 footer {
-  background-color: rgba(247,211,176,0.8);
+  background-color: rgba(247, 211, 176, 0.8);
   text-align: center;
   padding: 10px 0;
 }
-.social{
+
+.social {
   text-align: center;
 }
+
 .social a {
   display: inline-block;
   margin: 0 5px;
 }
+
 .social svg {
   width: 50px;
   height: auto;
 }
+
 .photo {
   width: 250px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+    font-size: 16px;
+  }
+  #hero span {
+    display: block;
+    text-align: center;
+  }
+  p {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-right: 0;
+  }
+  h6 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  ul {
+    font-size: 16px;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  [class*="col-"] {
+    float: left;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.berlin-illustration svg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+@keyframes color-change {
+  0% {fill: #edc655;}
+ 50% {fill: #fcffad;}
+ 100% {fill: #f76414;}
+}
+.sun {
+   animation-duration: 4s;
+   animation-name: color-change;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   animation-timing-function: linear;}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
