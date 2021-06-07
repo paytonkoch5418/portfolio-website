@@ -130,7 +130,6 @@ a:active {
 
 header {
   background-color: #93A7C7;
-  text-align: center;
   padding: 10px 0;
   position: relative;
 }
@@ -153,7 +152,7 @@ header {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 
 .logo svg {
@@ -170,7 +169,6 @@ nav>ul>li {
   list-style-type: none;
   padding: 0;
   text-align: center;
-  display: inline-block;
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -207,7 +205,9 @@ nav>ul>li>a:active {
   font-weight: 700;
   color: #ffffff;
 }
-
+.navtoggle li:not(:last-child) {
+  display: none;
+}
 #hero {
   background-color: #FFBD7E;
 }
@@ -254,9 +254,18 @@ footer {
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
-    font-size: 16px;
+    margin-top: -80px;
+    font-size: 18px;
   }
+  nav > ul > li {
+  display: inline-block;
+}
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
   #hero span {
     display: block;
     text-align: center;
@@ -280,6 +289,9 @@ footer {
   }
   ul {
     font-size: 16px;
+  }
+  .logo {
+    max-width: 250px;
   }
   .col-md-1 {width: 8.33%;}
   .col-md-2 {width: 16.66%;}
