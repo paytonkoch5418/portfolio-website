@@ -286,6 +286,15 @@ footer {
 .navtoggle li:last-child {
   display: none;
 }
+.navtoggle.responsive li  {
+  padding: 0 15px;
+}
+.navtoggle.responsive nav {
+  padding: 0;
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 0;
+}
 .logo {
   max-width: 100px;
 }
