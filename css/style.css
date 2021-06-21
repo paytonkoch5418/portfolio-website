@@ -350,7 +350,6 @@ footer {
     clear: both;
     display: table;
   }
-}
 
 @media only screen and (min-width: 1024px) {
   .container {
